@@ -6,8 +6,11 @@
   Setup:
   
   `wasm-pack build --target web`
+  
   `python -m http.server 8000`
+  
   Open in browser:
+  
   `localhost:8000`
  
 

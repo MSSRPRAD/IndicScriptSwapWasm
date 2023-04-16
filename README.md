@@ -3,13 +3,14 @@
   
   <p><b>Companion to www.github.com/mssrprad/transliterate-ferris.git</b></p>
   
-  <p>
   Setup:
+  
   `wasm-pack build --target web`
   `python -m http.server 8000`
   Open in browser:
   `localhost:8000`
-  </p>
+ 
+
 <div align="center">
 
   <h1><code>wasm-pack-template</code></h1>

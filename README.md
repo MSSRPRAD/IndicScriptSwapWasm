@@ -1,5 +1,17 @@
 <div align="center">
 
+  <h1>transliterator-ferris-wasm</h1>
+  
+  <p><b>Companion to www.github.com/mssrprad/transliterate-ferris.git</b></p>
+  
+  <p>
+  Setup:
+  `wasm-pack build --target web`
+  `python -m http.server 8000`
+  Open in browser:
+  `localhost:8000`
+  </p>
+
   <h1><code>wasm-pack-template</code></h1>
 
   <strong>A template for kick starting a Rust and WebAssembly project using <a href="https://github.com/rustwasm/wasm-pack">wasm-pack</a>.</strong>

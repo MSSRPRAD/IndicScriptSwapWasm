@@ -1,4 +1,3 @@
-<div align="center">
 
   <h1>transliterator-ferris-wasm</h1>
   
@@ -11,6 +10,7 @@
   Open in browser:
   `localhost:8000`
   </p>
+<div align="center">
 
   <h1><code>wasm-pack-template</code></h1>
 

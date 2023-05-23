@@ -24,15 +24,18 @@ pub fn script_swap(input: &str, src: &str, dest: &str, conv: usize) -> JsValue {
     let destination = foo.get(dest).unwrap();
     let output: String;
     match conv {
-        0 | 2 => {
-            output = convert::convert_roman_to_roman(&input.to_string(), source, destination);
+        0 => {
+            output = convert::convert_indic_to_indic(&input.to_string(), source, destination);
         }, 
         1 => {
             output = convert::convert_indic_to_roman(&input.to_string(), source, destination);
         },
+        2 => {
+            output = convert::convert_roman_to_roman(&input.to_string(), source, destination);
+        }, 
         3 => {
             output = convert::convert_roman_to_indic(&input.to_string(), source, destination);
-        }, 
+        },
         _ => {
             output = String::from("Could Not Convert. Wrong conversion selected!");
         }

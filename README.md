@@ -1,6 +1,8 @@
 
   <h1>transliterator-ferris-wasm</h1>
   
+  Visit https://transliterate-ferris-wasm.vercel.app/ to test the program
+  
   <p><b>Companion to www.github.com/mssrprad/transliterate-ferris.git</b></p>
   
   Setup:

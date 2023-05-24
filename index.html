@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8" />
-    <title>Indic Script Swap Wasm Example</title>
-    <h1>Indic Script Swap Wasm Example</h1>
+    <style>
+      h1 {
+        text-align: center;
+      }
+  
+      select {
+        margin: 10px;
+      }
+  
+      .flex-container {
+        display: flex;
+      }
+  
+      .textarea {
+        width: 48%;
+        margin: auto;
+        border: black;
+        border-width: thick;
+      }
+  
+      textarea {
+        font-size: 35px;
+        display: block;
+        width: 100%;
+        height: 500px;
+        padding: 5px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: none;
+      }
+    </style>
   </head>
   <body>
+    <h1>Indic Script Swap Wasm Demo</h1>
     <div class="flex-container">
-      <div class="textarea"><textarea id="t1">
-      </textarea>
-      <select id="t1-select">
-        <option value="itrans">itrans</option>
-        <option value="iast">iast</option>
-        <option value="slp1">slp1</option>
-        <option value="hk">hk</option>
-        <option value="devanagari">devanagari</option>
-        <option value="telugu">telugu</option>
-        <option value="kannada">kannada</option>
-      </select></div>
-      <div class="textarea"><textarea id = "t2">
-      </textarea><select id="t2-select">
-        <option value="itrans">itrans</option>
-        <option value="iast">iast</option>
-        <option value="slp1">slp1</option>
-        <option value="hk">hk</option>
-        <option value="devanagari">devanagari</option>
-        <option value="telugu">telugu</option>
-        <option value="kannada">kannada</option>
-      </select></div>
+      <div class="textarea">
+        <textarea id="t1"></textarea>
+        <select id="t1-select">
+          <option value="itrans">itrans</option>
+          <option value="iast">iast</option>
+          <option value="slp1">slp1</option>
+          <option value="hk">hk</option>
+          <option value="devanagari">devanagari</option>
+          <option value="telugu">telugu</option>
+          <option value="kannada">kannada</option>
+        </select>
+      </div>
+      <div class="textarea">
+        <textarea id="t2"></textarea>
+        <select id="t2-select">
+          <option value="itrans">itrans</option>
+          <option value="iast">iast</option>
+          <option value="slp1">slp1</option>
+          <option value="hk">hk</option>
+          <option value="devanagari">devanagari</option>
+          <option value="telugu">telugu</option>
+          <option value="kannada">kannada</option>
+        </select>
+      </div>
     </div>
   </body>
-  <style>
-
-    h1 {
-      text-align: center;
-    }
-
-    select {
-      margin: 10px;
-    }
-
-    .flex-container {
-      display: flex;
-    }
-
-    .textarea {
-      width: 48%;
-      margin: auto;
-      border: black;
-      border-width: thick;
-    }
-
-    textarea {
-      font-size: 35px;
-      display: block;
-      width: 100%;
-      height: 500px;
-      padding: 5px;
-      box-sizing: border-box;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      resize: none;
-    }
-  </style>
   <!-- 
     // 0 -> i2i
     // 1 -> i2r

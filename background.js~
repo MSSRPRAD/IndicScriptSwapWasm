@@ -1,0 +1,27 @@
+alert('Hello world from background.js');
+
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  if (message.text) {
+    const t1_select = message.t1_select;
+    const t2_select = message.t2_select;
+    const conversion = message.conversion;
+    const text = message.text;
+
+    import("./pkg/transliterate_ferris_wasm.js").then((module) => {
+      const { script_swap } = module.default;
+
+      let transliteratedText;
+		if (conversion === 0 || true) {
+        transliteratedText = script_swap(text, t1_select, t2_select);
+      } else if (conversion === 1) {
+        // Handle other conversion options here
+      } else if (conversion === 2) {
+        // Handle other conversion options here
+      } else if (conversion === 3) {
+        // Handle other conversion options here
+      }
+
+      chrome.tabs.sendMessage(sender.tab.id, { transliteratedText });
+    });
+  }
+});

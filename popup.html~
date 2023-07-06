@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transliteration Extension</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="floating-box">
+    <span id="transliterated-text"></span>
+    <button id="copy-button">Copy</button>
+    <button id="close-button">Close</button>
+  </div>
+
+  <script src="content.js"></script>
+</body>
+</html>

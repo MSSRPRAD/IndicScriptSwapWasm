@@ -1,0 +1,12 @@
+{
+	"name": "IndicScriptSwapExtension",
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"description": "A browser extension to transliterate text between Indic and Roman Scripts",
+	"permissions": ["activeTab", "storage"],
+	"content_security_policy": "default-src 'self'; script-src 'self' 'sha256-HoJExGTZN1iiMGkdhwJEsI9QC1U6ruuRAmHK4QLDRGA=' 'wasm-eval';",
+	"page_action": {
+    "default_popup": "index.html"
+	}
+	
+}
